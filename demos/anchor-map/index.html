@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>qvra — anchor map</title>
+  <style>
+    :root {
+      --bg: #0a0c10;
+      --panel: #11161d;
+      --panel-2: #151c24;
+      --line: #243040;
+      --text: #edf2f7;
+      --muted: #9fb0c3;
+      --accent: #7dd3fc;
+      --accent-2: #a78bfa;
+      --ok: #86efac;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(125,211,252,0.10), transparent 30%),
+        radial-gradient(circle at top right, rgba(167,139,250,0.10), transparent 28%),
+        var(--bg);
+      color: var(--text);
+    }
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px 56px;
+    }
+    .hero {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .eyebrow {
+      color: var(--accent);
+      font-size: 13px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 64px);
+      line-height: 0.96;
+      letter-spacing: -0.04em;
+    }
+    .sub {
+      max-width: 820px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 6px;
+    }
+    .pill {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.03);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .card {
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 18px;
+      min-height: 260px;
+      display: grid;
+      gap: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.24);
+    }
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .name {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin: 0;
+    }
+    .tag {
+      font-size: 12px;
+      color: var(--ok);
+      border: 1px solid rgba(134,239,172,0.25);
+      background: rgba(134,239,172,0.08);
+      border-radius: 999px;
+      padding: 6px 10px;
+      white-space: nowrap;
+    }
+    .role {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+    }
+    .body {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .actions {
+      margin-top: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    a.btn {
+      text-decoration: none;
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 14px;
+      font-weight: 700;
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: rgba(255,255,255,0.04);
+    }
+    a.btn.primary {
+      border-color: rgba(125,211,252,0.35);
+      background: rgba(125,211,252,0.12);
+      color: #dff7ff;
+    }
+    .footer {
+      margin-top: 30px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+    code {
+      background: rgba(255,255,255,0.06);
+      padding: 2px 6px;
+      border-radius: 8px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">qvra / show / first live demo</div>
+      <h1>Class A anchor map</h1>
+      <div class="sub">
+        A visible route into the 5 gravitational anchors. This is the first live proof surface in <code>show</code>: not theory, not screenshots, but direct contact paths into the field.
+      </div>
+      <div class="meta">
+        <div class="pill">visible proof</div>
+        <div class="pill">direct routes</div>
+        <div class="pill">class a</div>
+        <div class="pill">qvra field entry</div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="top">
+          <h2 class="name">run</h2>
+          <div class="tag">active anchor</div>
+        </div>
+        <div class="role">Immediate utility</div>
+        <div class="body">
+          Small runnable tools with visible output and low friction. The fastest first-use contact surface in the field.
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/qvra/run" target="_blank" rel="noreferrer">Open repo</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="top">
+          <h2 class="name">bench</h2>
+          <div class="tag">active anchor</div>
+        </div>
+        <div class="role">Argument engine</div>
+        <div class="body">
+          Reproducible comparison and measurable technical pressure. Where claims get tested instead of merely stated.
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/qvra/bench" target="_blank" rel="noreferrer">Open repo</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="top">
+          <h2 class="name">lab</h2>
+          <div class="tag">active anchor</div>
+        </div>
+        <div class="role">Public experimentation</div>
+        <div class="body">
+          Unstable prototypes, speculative tools, and forward pressure. The place where new directions become visible early.
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/qvra/lab" target="_blank" rel="noreferrer">Open repo</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="top">
+          <h2 class="name">show</h2>
+          <div class="tag">active anchor</div>
+        </div>
+        <div class="role">Visible proof</div>
+        <div class="body">
+          Demos, examples, and showcase paths that convert curiosity into deeper clicks, stars, and field entry.
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/qvra/show" target="_blank" rel="noreferrer">Open repo</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="top">
+          <h2 class="name">pulse</h2>
+          <div class="tag">active anchor</div>
+        </div>
+        <div class="role">Heartbeat</div>
+        <div class="body">
+          Motion logs, release rhythm, and visible recurrence. The anchor that proves the field is still moving.
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/qvra/pulse" target="_blank" rel="noreferrer">Open repo</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="footer">
+      Open this file directly in a browser: <code>show/demos/anchor-map/index.html</code><br>
+      This demo exists to make the anchor layer visible now, before the wider field becomes denser.
+    </section>
+  </div>
+</body>
+</html>

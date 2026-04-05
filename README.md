@@ -42,6 +42,10 @@ Related routes:
 - [`lab`](https://github.com/qvra/lab) for unstable work behind some visible proofs
 - [`pulse`](https://github.com/qvra/pulse) for the visible rhythm of what is moving now
 
+## First live demo
+
+- [`demos/anchor-map`](./demos/anchor-map) — static visual map of the 5 Class A anchors with direct routes
+
 ## Display rule
 
 A visible proof that does not route to real contact weakens the field.
